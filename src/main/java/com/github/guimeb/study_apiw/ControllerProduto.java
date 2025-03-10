@@ -17,22 +17,22 @@ public class ControllerProduto {
     }
 
     @PostMapping
-    public ResponseEntity<String> create(){
+    public ResponseEntity<String> create() {
         return ResponseEntity.status(201).body("Create");
     }
 
     @GetMapping
-    public ResponseEntity<String> read(){
+    public ResponseEntity<String> read() {
         return ResponseEntity.status(200).body("Read");
     }
 
     @PutMapping
-    public ResponseEntity<String> update(){
+    public ResponseEntity<String> update() {
         return ResponseEntity.status(200).body("Update");
     }
 
     @DeleteMapping
-    public ResponseEntity<Void> delete(){
+    public ResponseEntity<Void> delete() {
         return ResponseEntity.status(204).build();
     }
 }
